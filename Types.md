@@ -1,4 +1,15 @@
 
+### Return types
+
+A function can return multiple return values.
+This can be observed from the return type.
+
+```go
+func vals() (int, int) {
+    return 3, 7
+}
+```
+
 ### Pointers 
 
 A pointer has memory address of a value.
@@ -39,6 +50,12 @@ An interface type is defined as a `set of method signatures`.
 
 A value of interface type can hold any value that implements those methods.
 
+```go
+type Fetcher interface {
+	// Fetch returns a slice of URLs found on the page.
+	Fetch(url string) (urls []string, err error)
+}
+```
 
 ### struct type
 
