@@ -1,5 +1,7 @@
 
 
+**A Mutex is used to provide a locking mechanism to ensure that only one Goroutine is running the critical section of code at any point in time to prevent race conditions from happening**
+
 ## Mutex is achieved with `sync.Mutex`
 
 `var m sync.Mutex` Has methods `m.Lock()` and `m.unLock()`. 

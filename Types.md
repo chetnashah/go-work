@@ -119,7 +119,7 @@ However, that notation is cumbersome, so the language permits us instead to writ
 Useful for adding methods to a existing struct, can be used by struct instances,
 but the functions, will receive a copy of the struct that they are called upon.
 
-i.e structs are passed by value(i.e. copy), even for recvr functions
+i.e **structs are passed by value(i.e. copy), even for recvr functions**
 ```go
 type person struct {
     name string
