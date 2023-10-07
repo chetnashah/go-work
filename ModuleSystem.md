@@ -5,6 +5,14 @@ Good resource: https://www.youtube.com/watch?v=Z1VhG7cf83M
 package is just a dir with go files,
 module is a go project/lib with `go.mod` file.
 
+**A module is a collection of packages that are released, versioned, and distributed together**
+
+### Module and package resolution
+
+A package path is a module path joined with a subdirectory within the module.
+
+For example `golang.org/x/net/html` is the package path for the package in the module `golang.org/x/net` in the "html" subdirectory
+
 ### History
 
 * Pre Go version 1.11 – Modules did not exist at all
