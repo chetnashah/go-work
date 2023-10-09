@@ -16,12 +16,13 @@ go funcName() // launch this funcName() in a goroutine, the caller will not wait
 Think of it like an independently executing function.
 Has its own callstack, concurrently scheduled.
 multiplexed on top of threads, many goroutines can map to a single thread.
-run it, not waiting for an answer, data communication will happen through channels.
+run it, not waiting for an answer, it will be scheduled independently, data communication will happen through channels.
 
 
 ## Channels
 
 A channel provides a connection between two goroutines allowing them to communicate.
+There is no memory sharing, instead channels are recommened way to communicate between goroutines.
 
 **Channels are first class values like strings and ints, which means you can create functions that take channels or return channels, or variable that refer to channels**.
 

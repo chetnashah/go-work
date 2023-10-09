@@ -1,4 +1,8 @@
 
+## Why Context?
+
+Context is used to pass request scoped values, cancellation signals, deadlines across API boundaries and goroutines.
+
 ## The context Interface
 
 ```go
